@@ -1,0 +1,3 @@
+mysql> select a.gene, a.function_1, e.expr_value, a.metabolism
+    -> from (expression e inner join annotation a on a.gene=e.gene);
+    
