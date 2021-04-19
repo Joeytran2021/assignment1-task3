@@ -3,4 +3,4 @@ SELECT m.LastName, m.FirstName, m.MemberID
     -> WHERE NOT EXISTS
     -> (SELECT * FROM Entry e
     -> WHERE e.MemberID = m.MemberID
-    -> AND e.Year <> 2013);
+    -> AND e.Year = 2013);
